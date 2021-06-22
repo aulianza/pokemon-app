@@ -45,7 +45,7 @@ const PokemonList = () => {
                             key={index}
                             poke={poke}
                             releaseAction={false}
-                            currentPage={"pokemonList"}
+                            currentPage="pokemonList"
                         />
                     ))}
                 </div>

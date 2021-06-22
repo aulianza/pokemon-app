@@ -1,6 +1,6 @@
 const getOwnedPokemon = () => {
     const ownedPokemon = JSON.parse(localStorage.getItem('myPokemon'));
-    return ownedPokemon.length ? ownedPokemon : [];
+    return ownedPokemon ? ownedPokemon : [];
 }
 
 export default getOwnedPokemon;
