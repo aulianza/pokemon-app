@@ -1,0 +1,26 @@
+.catch-success {
+    text-align: -webkit-center;
+    margin-top: 20px;
+}
+
+.error-message {
+    color: #f44336;
+    padding-top: 20px;
+}
+
+form {
+    width: 70%;
+}
+
+form > label {
+    font-size: 1.1em;
+}
+
+form > input {
+    display: block;
+    width: 98%;
+    height: 2rem;
+    font-size: 1.1rem;
+    text-align: center;
+    margin: 15px 0;
+}
