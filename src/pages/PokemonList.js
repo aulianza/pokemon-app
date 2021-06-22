@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useRef } from "react";
 import PokemonItem from "../components/PokemonItem";
 import EmptyState from "../components/EmptyState";
 import Button from "../components/Button";
@@ -14,15 +14,27 @@ const PokemonList = () => {
     const variables = { limit: limitState, offset: 0 };
     const { loading, error, data } = useQuery(GET_POKEMON_LIST, { variables });
 
+    const bottomRef = useRef();
+    const scrollToBottom = () => {
+        if (bottomRef.current) {
+            bottomRef.current.scrollIntoView({
+                behavior: "smooth",
+                block: "end",
+                inline: "nearest",
+            });
+        }
+    };
+
     const loadMoreHandler = () => {
         setLimitState(limitState + 3);
+        scrollToBottom();
     };
 
     const loadLessHandler = () => {
         setLimitState(limitState - 3);
     };
 
-    if (loading) return <Loading message="Bentar gan" />;
+    if (loading) return <Loading message="Loading..." />;
     if (error) return <EmptyState />;
     if (data) {
         const response = data.pokemons.results || [];
@@ -49,7 +61,7 @@ const PokemonList = () => {
                         />
                     ))}
                 </div>
-                <div className="pokemon-list__load__more">
+                <div className="pokemon-list__load__more" ref={bottomRef}>
                     {limitState > 3 ? (
                         <Button
                             title="Load Less"
