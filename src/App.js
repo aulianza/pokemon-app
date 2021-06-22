@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import PokemonList from "./pages/PokemonList";
 import MyPokemon from "./pages/MyPokemon";
 import PokemonDetail from "./pages/PokemonDetail";
+import Footer from "./components/Footer";
 
 const App = () => {
     return (
@@ -25,6 +26,7 @@ const App = () => {
                         </Route>
                     </Switch>
                 </Container>
+                <Footer />
             </div>
         </Router>
     );
