@@ -39,7 +39,7 @@ const PokemonDetail = () => {
         }
     };
 
-    if (loading) return <Loading message="nungguin yak?" />
+    if (loading) return <Loading message="Retrieving Pokemon detail.." />
     if (error) return <EmptyState />;
     if (data) {
         if (!data.pokemon.id) {
