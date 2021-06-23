@@ -2,6 +2,8 @@
 
 exports[`loading-component, snapshot 1`] = `
 <div>
-  <div />
+  <div
+    class="css-oqpjdc"
+  />
 </div>
 `;

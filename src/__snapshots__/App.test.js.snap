@@ -3,67 +3,78 @@
 exports[`app, snapshot 1`] = `
 <div>
   <div
-    class="App"
+    class="css-qki4k7"
   >
     <div
-      class="container"
+      class="css-4mgwn4"
     >
-      <header>
-        <div
-          class="header__logo"
-        >
-          <h1>
-            <img
-              alt="Pokemon App"
-              height="80"
-              src="pokemon-logo.svg"
-              title="Pokemon App"
-              width="250"
-            />
-          </h1>
-        </div>
-        <nav>
-          <a
-            aria-current="page"
-            class="nav-item nav-active"
-            href="/"
+      <div
+        class="css-i2iq46"
+      >
+        <header>
+          <div
+            class="header__logo"
           >
-            <span
-              class="nav-title"
+            <h1>
+              <img
+                alt="Pokemon App"
+                height="80"
+                src="pokemon-logo.svg"
+                title="Pokemon App"
+                width="250"
+              />
+            </h1>
+          </div>
+          <nav>
+            <a
+              aria-current="page"
+              class="nav-item nav-active"
+              href="/"
             >
-              Pokemon List
-            </span>
-          </a>
-          <a
-            class="nav-item"
-            href="/my-pokemon"
-          >
-            <span
-              class="nav-title"
+              <span
+                class="nav-title"
+              >
+                Pokemon List
+              </span>
+            </a>
+            <a
+              class="nav-item"
+              href="/my-pokemon"
             >
-              My Pokemon
-            </span>
-          </a>
-        </nav>
-      </header>
-      <div>
+              <span
+                class="nav-title"
+              >
+                My Pokemon
+              </span>
+            </a>
+          </nav>
+        </header>
+      </div>
+      <div
+        class="css-oqpjdc"
+      >
         Loading...
       </div>
     </div>
-    <footer>
-      <div>
-        <p>
-          © 2021 by 
-          <a
-            href="https://aulianza.id"
-            rel="noreferrer"
-            target="_blank"
-          >
-            aulianza
-          </a>
-        </p>
-      </div>
-    </footer>
+    <div
+      class="css-1omb43j"
+    >
+      <footer>
+        <div>
+          <p>
+            © 2021 by
+             
+            <a
+              href="https://aulianza.id"
+              rel="noreferrer"
+              target="_blank"
+            >
+              aulianza
+            </a>
+          </p>
+        </div>
+      </footer>
+    </div>
   </div>
 </div>
 `;

@@ -3,7 +3,7 @@
 exports[`my-pokemon, snapshot 1`] = `
 <div>
   <div
-    class="page-header"
+    class="css-k5c30z"
   >
     <h2>
       Catched Pokemon List
@@ -14,7 +14,7 @@ exports[`my-pokemon, snapshot 1`] = `
     </code>
   </div>
   <div
-    class="empty-state"
+    class="css-dgq0py"
   >
     <img
       alt="Not Found"

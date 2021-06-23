@@ -3,7 +3,7 @@
 exports[`container-component, snapshot 1`] = `
 <div>
   <div
-    class="container"
+    class="css-4mgwn4"
   />
 </div>
 `;

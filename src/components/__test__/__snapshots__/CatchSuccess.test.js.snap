@@ -4,12 +4,11 @@ exports[`loading-component, snapshot 1`] = `
 <div>
   <img
     alt="Pokemon Detail"
-    class="poke-image"
     height="140"
     width="140"
   />
   <div
-    class="catch-success"
+    class="css-ew1di0"
   >
     <form>
       <label>
@@ -21,7 +20,7 @@ exports[`loading-component, snapshot 1`] = `
         type="text"
       />
       <button
-        class="btn btn-success btn-block"
+        class="css-l6cmt2"
       >
         Add to My Pokemon
       </button>

@@ -3,7 +3,7 @@
 exports[`emptystate-component, snapshot 1`] = `
 <div>
   <div
-    class="empty-state"
+    class="css-dgq0py"
   >
     <img
       alt="Not Found"
