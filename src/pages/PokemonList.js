@@ -9,6 +9,8 @@ import { GET_POKEMON_LIST } from "../graphql/queries/getPokemonList";
 import getOwnedPokemon from "../graphql/queries/getOwnedPokemon";
 import initialDataPoint from "../graphql/operations/initialDataPoint";
 
+import styled from "@emotion/styled";
+
 const PokemonList = () => {
     const [limitState, setLimitState] = useState(initialDataPoint());
 
@@ -27,13 +29,13 @@ const PokemonList = () => {
     };
 
     const loadMoreHandler = () => {
-        initialDataPoint('more');
+        initialDataPoint("more");
         setLimitState(initialDataPoint());
         scrollToBottom();
     };
 
     const loadLessHandler = () => {
-        initialDataPoint('less');
+        initialDataPoint("less");
         setLimitState(initialDataPoint());
     };
 
@@ -50,11 +52,11 @@ const PokemonList = () => {
 
         return (
             <>
-                <div className="page-header">
+                <StyledPageHeader>
                     <h2>All Pokemon List</h2>
                     <code>Total: {pokemonsData.length}</code>
-                </div>
-                <div className="pokemon-list">
+                </StyledPageHeader>
+                <StyledPokemonList>
                     {pokemonsData.map((poke, index) => (
                         <PokemonItem
                             key={index}
@@ -63,8 +65,8 @@ const PokemonList = () => {
                             currentPage="pokemonList"
                         />
                     ))}
-                </div>
-                <div className="pokemon-list__load__more" ref={bottomRef}>
+                </StyledPokemonList>
+                <StyledLoadMore ref={bottomRef}>
                     {limitState > 3 ? (
                         <Button
                             title="Load Less"
@@ -79,10 +81,27 @@ const PokemonList = () => {
                         buttonColor="btn-primary"
                         onButtonClicked={loadMoreHandler}
                     />
-                </div>
+                </StyledLoadMore>
             </>
         );
     }
 };
 
 export default PokemonList;
+
+const StyledPageHeader = styled.div`
+    margin-bottom: 3rem;
+`;
+
+const StyledPokemonList = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-row-gap: 1rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+`;
+
+const StyledLoadMore = styled.div`
+    margin: 2.5rem 0;
+`;

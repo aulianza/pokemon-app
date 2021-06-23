@@ -1,12 +1,16 @@
 import React from "react";
-import "./Loading.css";
+import styled from "@emotion/styled";
 
 const Loading = (props) => {
     return (
         <>
-            <div>{props.message}</div>
+            <StyledLoading>{props.message}</StyledLoading>
         </>
     );
 };
 
 export default Loading;
+
+const StyledLoading = styled.div`
+    margin: 20px;
+`;

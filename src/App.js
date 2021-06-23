@@ -7,11 +7,12 @@ import PokemonList from "./pages/PokemonList";
 import MyPokemon from "./pages/MyPokemon";
 import PokemonDetail from "./pages/PokemonDetail";
 import Footer from "./components/Footer";
+import styled from "@emotion/styled";
 
 const App = () => {
     return (
         <Router>
-            <div className="App">
+            <StyledApp>
                 <Container>
                     <Header />
                     <Switch>
@@ -27,9 +28,19 @@ const App = () => {
                     </Switch>
                 </Container>
                 <Footer />
-            </div>
+            </StyledApp>
         </Router>
     );
 };
 
 export default App;
+
+const StyledApp = styled.div`
+    text-align: center;
+    font-family: "Rubik", sans-serif;
+    border-top: 7px solid #2d74b9;
+
+    input {
+        font-family: "Rubik", sans-serif;
+    }
+`;
