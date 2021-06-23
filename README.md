@@ -1,6 +1,26 @@
-# Getting Started with Create React App
+# PokemonApp
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+Libray used in this app :
+- React.js
+- GraphQL
+- Apollo Link HTTP
+- Emotion Styled CSS
+- React Color Extractor
+- React Testing Library
+
+Live Demo : [https://aulianza-pokemon-app.vercel.app](https://aulianza-pokemon-app.vercel.app)
+
+Screenshoot :
+![screenshot](https://github.com/aulianza/pokemon-app/blob/master/__screenshot/screenshot-desktop.png?raw=true)
+
+Lighthouse Score :
+![screenshot](https://github.com/aulianza/pokemon-app/blob/master/__screenshot/screenshot-lighthouse.png?raw=true)
+
+GTmetrix Score : [https://gtmetrix.com/reports/aulianza-pokemon-app.vercel.app/9LNmo3EW/](https://gtmetrix.com/reports/aulianza-pokemon-app.vercel.app/9LNmo3EW/)
+![screenshot](https://github.com/aulianza/pokemon-app/blob/master/__screenshot/screenshot-gtmetrix.png?raw=true)
+
 
 ## Available Scripts
 
