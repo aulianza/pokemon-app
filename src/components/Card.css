@@ -7,7 +7,7 @@
 }
 
 .card-wave {
-    background-image: url(../assets/waves.png);
+    background-image: url(../assets/images/waves.png);
     background-size: initial;
     background-position: bottom;
     background-blend-mode: color-burn;
