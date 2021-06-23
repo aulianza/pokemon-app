@@ -4,17 +4,18 @@ import { ColorExtractor } from "react-color-extractor";
 import Button from "../components/Button";
 import Card from "../components/Card";
 import "./PokemonItems.css";
+import BlankImage from '../assets/images/blank.png'
 
 const PokemonItem = (props) => {
     const [colorState, setColorState] = useState("");
 
     let route = useHistory();
     const clickHandler = () => {
-        route.push(`/pokemon/${props.poke.name}`);
+        route.push(`/pokemon/${props?.poke?.name}`);
     };
 
     const releaseHandler = () => {
-        props.onRelease(props.poke.nickname);
+        props.onRelease(props?.poke?.nickname);
     };
 
     const filterColor = (color) => {
@@ -23,25 +24,25 @@ const PokemonItem = (props) => {
 
     return (
         <>
-            <ColorExtractor src={props.poke.image} getColors={filterColor} />
+            {props?.poke?.image ? <ColorExtractor src={props?.poke?.image} getColors={filterColor} /> : <ColorExtractor src={BlankImage} getColors={filterColor} />}
             <Card
                 className="pokemon-list__item"
                 inlineStyle={{ backgroundColor: colorState }}
                 isCardWave
             >
                 <div onClick={clickHandler}>
-                    <div className="pokemon-list__name">{props.poke.name}</div>
+                    <div className="pokemon-list__name">{props?.poke?.name}</div>
                     <div className="pokemon-list__image">
                         <img
-                            src={props.poke.image}
-                            alt={props.poke.name}
+                            src={props?.poke?.image}
+                            alt={props?.poke?.name}
                             width="150"
                             height="150"
                         />
                     </div>
-                    {props.currentPage === "pokemonList" ? (
+                    {props?.currentPage === "pokemonList" ? (
                         <div className="pokemon-list__description">
-                            <span>Owned : {props.poke.owned}</span>
+                            <span>Owned : {props?.poke?.owned}</span>
                         </div>
                     ) : (
                         <div
@@ -50,12 +51,12 @@ const PokemonItem = (props) => {
                         >
                             <span>Nickname :</span>
                             <span className="pokemon-list__nickname">
-                                {props.poke.nickname}
+                                {props?.poke?.nickname}
                             </span>
                         </div>
                     )}
                 </div>
-                {props.releaseAction === true ? (
+                {props?.releaseAction === true ? (
                     <div className="pokemon-list__action">
                         <Button
                             onButtonClicked={releaseHandler}

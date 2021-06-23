@@ -1,5 +1,5 @@
 import React from "react";
-import NotFound from "../assets/empty.svg";
+import NotFound from "../assets/images/empty.svg";
 
 import './EmptyState.css';
 
