@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`header-component, snapshot 1`] = `
+<div>
+  <header>
+    <div
+      class="header__logo"
+    >
+      <h1>
+        <img
+          alt="Pokemon App"
+          height="80"
+          src="pokemon-logo.svg"
+          title="Pokemon App"
+          width="250"
+        />
+      </h1>
+    </div>
+    <nav>
+      <a
+        aria-current="page"
+        class="nav-item nav-active"
+        href="/"
+      >
+        <span
+          class="nav-title"
+        >
+          Pokemon List
+        </span>
+      </a>
+      <a
+        class="nav-item"
+        href="/my-pokemon"
+      >
+        <span
+          class="nav-title"
+        >
+          My Pokemon
+        </span>
+      </a>
+    </nav>
+  </header>
+</div>
+`;

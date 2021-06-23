@@ -12,7 +12,6 @@ const Button = (props) => {
         props.onButtonClicked();
     }
 
-
     return <button className={classes.join(" ")} onClick={clickHandler}>{props.title}</button>;
 };
 

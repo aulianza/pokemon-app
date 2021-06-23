@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`my-pokemon, snapshot 1`] = `
+<div>
+  <div
+    class="page-header"
+  >
+    <h2>
+      Catched Pokemon List
+    </h2>
+    <code>
+      Total: 
+      0
+    </code>
+  </div>
+  <div
+    class="empty-state"
+  >
+    <img
+      alt="Not Found"
+      height="200"
+      src="empty.svg"
+      width="200"
+    />
+    <span>
+      No Pokemon Found.
+    </span>
+  </div>
+</div>
+`;

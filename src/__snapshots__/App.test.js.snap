@@ -1,0 +1,69 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`app, snapshot 1`] = `
+<div>
+  <div
+    class="App"
+  >
+    <div
+      class="container"
+    >
+      <header>
+        <div
+          class="header__logo"
+        >
+          <h1>
+            <img
+              alt="Pokemon App"
+              height="80"
+              src="pokemon-logo.svg"
+              title="Pokemon App"
+              width="250"
+            />
+          </h1>
+        </div>
+        <nav>
+          <a
+            aria-current="page"
+            class="nav-item nav-active"
+            href="/"
+          >
+            <span
+              class="nav-title"
+            >
+              Pokemon List
+            </span>
+          </a>
+          <a
+            class="nav-item"
+            href="/my-pokemon"
+          >
+            <span
+              class="nav-title"
+            >
+              My Pokemon
+            </span>
+          </a>
+        </nav>
+      </header>
+      <div>
+        Loading...
+      </div>
+    </div>
+    <footer>
+      <div>
+        <p>
+          © 2021 by 
+          <a
+            href="https://aulianza.id"
+            rel="noreferrer"
+            target="_blank"
+          >
+            aulianza
+          </a>
+        </p>
+      </div>
+    </footer>
+  </div>
+</div>
+`;

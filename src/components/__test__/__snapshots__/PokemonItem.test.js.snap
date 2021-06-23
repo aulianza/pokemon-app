@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`pokemon-item-component, snapshot 1`] = `
+<div>
+  <div
+    class="card pokemon-list__item card-wave"
+  >
+    <div>
+      <div
+        class="pokemon-list__name"
+      />
+      <div
+        class="pokemon-list__image"
+      >
+        <img
+          height="150"
+          width="150"
+        />
+      </div>
+      <div
+        class="pokemon-list__description"
+        style="padding-top: 0px;"
+      >
+        <span>
+          Nickname :
+        </span>
+        <span
+          class="pokemon-list__nickname"
+        />
+      </div>
+    </div>
+    
+  </div>
+</div>
+`;

@@ -11,7 +11,7 @@ import { useQuery } from "@apollo/client";
 import { GET_POKEMON_DETAIL } from "../graphql/queries/getPokemonDetail";
 import getOwnedPokemon from "../graphql/queries/getOwnedPokemon";
 
-import Pokeball from "../assets/pokeball.png";
+import Pokeball from "../assets/images/pokeball.png";
 import "./PokemonDetail.css";
 
 const PokemonDetail = () => {

@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`footer-component, snapshot 1`] = `
+<div>
+  <footer>
+    <div>
+      <p>
+        © 2021 by 
+        <a
+          href="https://aulianza.id"
+          rel="noreferrer"
+          target="_blank"
+        >
+          aulianza
+        </a>
+      </p>
+    </div>
+  </footer>
+</div>
+`;

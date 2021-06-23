@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`emptystate-component, snapshot 1`] = `
+<div>
+  <div
+    class="empty-state"
+  >
+    <img
+      alt="Not Found"
+      height="200"
+      src="empty.svg"
+      width="200"
+    />
+    <span>
+      No Pokemon Found.
+    </span>
+  </div>
+</div>
+`;

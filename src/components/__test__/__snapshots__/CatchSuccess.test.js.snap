@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`loading-component, snapshot 1`] = `
+<div>
+  <img
+    alt="Pokemon Detail"
+    class="poke-image"
+    height="140"
+    width="140"
+  />
+  <div
+    class="catch-success"
+  >
+    <form>
+      <label>
+        Give Nickname :
+      </label>
+      <input
+        name="nickname"
+        placeholder="Input here..."
+        type="text"
+      />
+      <button
+        class="btn btn-success btn-block"
+      >
+        Add to My Pokemon
+      </button>
+    </form>
+    <span />
+  </div>
+</div>
+`;

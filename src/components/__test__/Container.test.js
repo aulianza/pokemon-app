@@ -1,12 +1,9 @@
-import App from "./App";
-import { act } from "react-dom/test-utils";
+import Container from "../Container";
 import { render, unmountComponentAtNode } from "react-dom";
-import { MockedProvider } from "@apollo/client/testing";
-import { mocksData } from "./graphql/mocks/mocksData";
+import { act } from "react-dom/test-utils";
+import { BrowserRouter as Router } from "react-router-dom";
 
-const data = mocksData;
 let container = null;
-
 beforeEach(() => {
     container = document.createElement("div");
     document.body.appendChild(container);
@@ -18,12 +15,12 @@ afterEach(() => {
     container = null;
 });
 
-it("app, snapshot", () => {
+it("container-component, snapshot", () => {
     act(() => {
         render(
-            <MockedProvider mock={data}>
-                <App />
-            </MockedProvider>,
+            <Router>
+                <Container />
+            </Router>,
             container
         );
     });
