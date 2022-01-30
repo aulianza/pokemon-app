@@ -35,11 +35,7 @@ const CatchSuccess = (props) => {
             return pokemon.nickname === nickname;
         });
 
-        if (check.length) {
-            return false;
-        } else {
-            return true;
-        }
+        return check.length ? false : true;
     };
 
     return (
